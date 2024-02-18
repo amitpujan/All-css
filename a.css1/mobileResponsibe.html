@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .menu{
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       .menu a{
+        display: block;
+        padding: 20px 30px;
+        text-decoration: none;
+        font-size: 20px;
+        float: left;
+       }
+       .three-lines{
+        display: block;
+        height: 50px;
+        width: 40px;
+        float: right;
+       
+       }
+       .three-lines .hr{
+        border: 5px solid black;
+        /* height: 50px;
+        width: 40px;
+        float: right; */
+       }
+       .three-lines:hover+.menu{
+        
+            display: block;
+        
+       }
+       @media only screen and (max-width:600px){
+        .menu{
+            display: none;
+        }
+        .three-lines{
+            display: block;
+        }
+        .menu .a{
+            float: none;
+        }
+        .sign{
+            float: none;
+        }
+       }
+       @media only screen and (min-width:600px){
+        .menu{
+            display: none;
+        }
+        .three-lines{
+            display: block;
+        }
+        .menu .a{
+            float: none;
+        }
+        .sign{
+            float: none;
+        }
+       }
+       @media only screen and (min-width:768px){
+        .menu{
+            display: block;
+        }
+        .three-lines{
+            display: none;
+        }
+       }
+       @media only screen and (min-width:922px){
+        .menu{
+            display: block;
+        }
+        .three-lines{
+            display: none;
+        }
+       }@media only screen and (min-width:1200px){
+        .menu{
+            display: block;
+        }
+        .three-lines{
+            display: none;
+        }
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="three-lines"><hr><hr><hr></div>
+    <DIV class="menu">
+        <a href="">Home</a>
+        <a href="">About us</a> 
+        <a href="">Contact us</a>
+        <a href="" style="float:right" class="sign" >Sign in</a>
+    </DIV>
+  
+</body>
+</html>
